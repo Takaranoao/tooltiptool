@@ -9,4 +9,5 @@ import java.util.List;
 
 public interface ItemTooltip {
     List<ITextComponent> getTooltip(ItemStack itemStack, EntityPlayer p_getTooltip_1_, ITooltipFlag p_getTooltip_2_, List<ITextComponent> toolTip);
+    void beforeGettooltip();
 }

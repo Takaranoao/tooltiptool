@@ -2,7 +2,6 @@ package com.takaranoao.mods.tooltiptool.mixins;
 
 import com.takaranoao.mods.tooltiptool.listenerdefinitions.DoneLoading;
 import net.minecraft.init.Bootstrap;
-import org.apache.logging.log4j.LogManager;
 import org.dimdev.riftloader.RiftLoader;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -16,7 +15,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class MixinDoneLoading {
     @Inject(method = "register", at = @At("RETURN"))
     private static void onBootstrapRegister(CallbackInfo ci) {
-        LogManager.getLogger().info(">>>>>MixinDoneLoading");
             for (DoneLoading listener : RiftLoader.instance.getListeners(DoneLoading.class)) {
                 listener.onDoneLoading();
             }
