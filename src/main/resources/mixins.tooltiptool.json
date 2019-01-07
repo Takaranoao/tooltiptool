@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.7.7",
+  "compatibilityLevel": "JAVA_8",
+  "target": "@env(DEFAULT)",
+  "package": "com.takaranoao.mods.tooltiptool.mixins",
+  "refmap": "mixins.tooltiptool.refmap.json",
+  "mixins": [
+    "MixinDoneLoading"
+  ],
+  "client": [
+    "MixinItemStack"
+  ]
+}

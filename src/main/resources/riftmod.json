@@ -1,0 +1,11 @@
+{
+  "id": "tooltiptool",
+  "name": "ToolTipTool",
+  "authors": [
+    "Takaranoao"
+  ],
+  "listeners": [
+    "com.takaranoao.mods.tooltiptool.listener.InitListener",
+    {"class":"com.takaranoao.mods.tooltiptool.listener.ItemTooltipListener", "side":"client"}
+  ]
+}
